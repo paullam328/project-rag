@@ -29,12 +29,11 @@ retrieval. Reranking held recall steady on this run — sample size might've bee
 
 ## Setup
 
-Place the source PDF `microsoft-annual-report.pdf` at `pdfs/microsoft-annual-report.pdf`, in the same directory as where you pulled `project-rag` (outside of this project's directory) (or update
-`config.PDF_PATH`). <-- Important. Need that microsoft-annual-report.pdf to scrape data from.
+Place the source PDF `microsoft-annual-report.pdf` at `pdfs/microsoft-annual-report.pdf`, in the same directory as where you pulled `project-rag` (outside of this project's directory). <-- Important. Need that microsoft-annual-report.pdf to scrape data from.
 
 If you want to scrape with manual pdfs, you can simply:
 1. Place your pdf file in the same directory as where you pulled `project-rag` (outside of this project's directory) as `pdfs/<file-name>.pdf`
-2. Update `config.PDF_PATH` to `pdf/<file-name>.pdf`
+2. Update `config.PDF_PATH` to `pdfs/<file-name>.pdf`
 3. Enjoy!
 
 ## Gettng Grok API key (Need this to talk to LLM)
