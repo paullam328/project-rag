@@ -36,7 +36,7 @@ If you want to scrape with manual pdfs, you can simply:
 2. Update `config.PDF_PATH` to `pdfs/<file-name>.pdf`
 3. Enjoy!
 
-## Gettng Grok API key (Need this to talk to LLM)
+## Gettng Groq API key (Need this to talk to LLM)
 1. visit https://groq.com/
 2. Developer tab --> Free API key
 3. Create .env file within ./project-rag
