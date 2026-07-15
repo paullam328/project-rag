@@ -4,7 +4,8 @@ import random
 class Evaluator:
     """
     Builds a synthetic eval set (chunk -> LLM-generated question) and measures
-    Recall@k for any retrieval function with signature (query, k) -> List[str].
+    Recall at k (the fraction where test questions' chunk appeared somewhere in the top-k result) 
+    for any retrieval function with signature (query, k) -> List[str].
 
     This is deliberately decoupled from RAGPipeline: it only needs a list of
     chunks (to sample from), a generator (to invert chunk->question), and

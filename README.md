@@ -34,13 +34,32 @@ pip install -r requirements.txt
 cp .env.example .env  # then fill in your GROQ_API_KEY
 ```
 
-Place the source PDF at `pdfs/microsoft-annual-report.pdf` (or update
-`config.PDF_PATH`).
+Place the source PDF `microsoft-annual-report.pdf` at `pdfs/microsoft-annual-report.pdf`, in the same directory as where you pulled `project-rag` (outside of this project's directory) (or update
+`config.PDF_PATH`). <-- Important. Need that microsoft-annual-report.pdf to scrape data from.
+
+If you want to scrape with manual pdfs, you can simply:
+1. Place your pdf file in the same directory as where you pulled `project-rag` (outside of this project's directory) as `pdfs/<file-name>.pdf`
+2. Update `config.PDF_PATH` to `pdf/<file-name>.pdf`
+3. Enjoy!
+
+## Gettng Grok API key (Need this to talk to LLM)
+1. visit https://groq.com/
+2. Developer tab --> Free API key
+3. Create .env file within ./project-rag
+4. Within .env file: GROQ_API_KEY=<API-Key>
 
 ## Run
 
 ```bash
-python main.py
+# Install dependencies using requirement.txt and venv:
+python3 -m venv .venv # outside of project-rag repo, setup virtual env
+source .venv/bin/activate
+cd ./project-rag
+pip3 install -r requirements.txt
+
+# Compile:
+cd .. # Step back a directory level outside of project-rag
+python3 -m project-rag
 ```
 
 Runs the strategy comparison first, then drops into an interactive prompt

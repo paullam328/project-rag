@@ -6,7 +6,7 @@ from langchain_text_splitters import (
     SentenceTransformersTokenTextSplitter,
 )
 
-import config
+from . import config
 
 
 def word_wrap(text, width=87):

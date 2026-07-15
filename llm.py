@@ -1,6 +1,6 @@
 from openai import OpenAI
 
-import config
+from . import config
 
 
 class LLMClient:

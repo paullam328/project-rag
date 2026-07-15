@@ -1,8 +1,8 @@
-from document_store import DocumentStore
-from llm import LLMClient, QueryExpander, Generator
-from reranker import Reranker
-from pipeline import RAGPipeline
-from evaluator import Evaluator
+from .document_store import DocumentStore
+from .llm import LLMClient, QueryExpander, Generator
+from .reranker import Reranker
+from .pipeline import RAGPipeline
+from .evaluator import Evaluator
 
 
 def build_pipeline():
