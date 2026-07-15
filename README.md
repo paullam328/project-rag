@@ -46,7 +46,7 @@ If you want to scrape with manual pdfs, you can simply:
 1. visit https://groq.com/
 2. Developer tab --> Free API key
 3. Create .env file within ./project-rag
-4. Within .env file: GROQ_API_KEY=<API-Key>
+4. Within .env file: GROQ_API_KEY=`<API-Key>`
 
 ## Run
 
