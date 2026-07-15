@@ -29,11 +29,6 @@ retrieval. Reranking held recall steady on this run — sample size might've bee
 
 ## Setup
 
-```bash
-pip install -r requirements.txt
-cp .env.example .env  # then fill in your GROQ_API_KEY
-```
-
 Place the source PDF `microsoft-annual-report.pdf` at `pdfs/microsoft-annual-report.pdf`, in the same directory as where you pulled `project-rag` (outside of this project's directory) (or update
 `config.PDF_PATH`). <-- Important. Need that microsoft-annual-report.pdf to scrape data from.
 
